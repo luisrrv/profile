@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(240, 240, 240);
+  color: rgb(48, 48, 48);
+}
+div {
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  /* margin: 0 auto; */
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  padding: 16px 32px;
+}
+
+.header > h1 {
+  font-weight: 300;
+}
+
+
+p{
+  font-weight: 300;
+  color: rgb(48, 48, 48)
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-position: 50% 50%;
+}
+
+h3 {
+  font-size: 16px;
+  color: rgb(84, 84, 84);
+  font-weight: 300;
+}
+
+.blue-text {
+ color: rgb(0, 106, 255);
+ font-weight: 300;
+}
+
+.btn-blue {
+  text-decoration: none;
+  background-color: rgb(0, 106, 255);
+  color: rgb(237, 237, 237);
+  padding: 16px 24px;
+  border-radius: 3px;
+  display: inline-block;
+  /* border: 1px solid transparent; */
+  box-shadow: 0 7px 17px 0px rgba(0, 0, 0, 0.26);
+  transition: 200ms;
+}
+
+.btn-blue:hover {
+  background-color: rgb(237, 237, 237);
+  color: rgb(0, 106, 255);
+  box-shadow: 0 10px 17px 0px rgba(0, 0, 0, 0.258);
+  transform: translateY(-3px);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  column-gap: 24px;
+  height: 500px;
+  width: 60%;
+  background-color: rgb(240, 240, 240);
+  padding: 0;
+  /* margin-bottom: 50px; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.105);
+  padding: 16px 32px;
+  width: 500px;
+  height: 400px;
+  text-align: center;
+}
+
+.card > h3 {
+  color: rgb(0, 106, 255);
+  font-size: 1.6rem;
+}
+
+.card > i {
+  font-size: 2rem;
+  color: rgb(54, 54, 54);
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  background-color: rgb(249, 249, 249);
+  height: 200px;
+  color: rgb(48, 48, 48);
+  font-size: 0.8rem;
+}
+.footer > h2 {
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  display: inline;
+}
+
+.social-list {
+display: inline;
+font-size: 2.4rem;
+margin: 6px;
+color: rgb(0, 106, 255);
+}
+
+i {
+  transition: 200ms;
+}
+i:hover {
+  transform: translateY(-4px);
+}
+
+
+/* ================ media queries ================ */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  body {
+    font-size: 130%;
+  }
+  img {
+    height: 220px ;
+    width: 220px;
+  }
+  .cards-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: 1000px;
+    row-gap: 32px;
+  }
+  .card {
+    height: 400px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  body {
+    font-size: 120%;
+  }
+  img {
+    height: 220px ;
+    width: 220px;
+  }
+  .cards-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: 900px;
+    row-gap: 24px;
+  }
+  .card {
+    height: 350px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  body {
+    font-size: 100%;
+  }
+  img {
+    height: 200px ;
+    width: 200px;
+  }
+  .cards-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .card {
+    height: 300px;
+    width: 300px;
+  }
+  .footer {
+    font-size: 0.6rem;
+  }
+}
